@@ -1,0 +1,176 @@
+
+ro.boot.bootdevice=624000.ufshc
+ro.build.PDA=SC02HOMU1BQH1
+ro.build.hidden_ver=SC02HOMU1BQH1
+ro.chipname=MSM8996
+ro.factory.model=SM-G935D
+
+# Hardware Info
+ro.device.chipset=Qualcomm Snapdragon 820
+ro.device.cpu=2.15 GHz dual-core Kryo & 1.59 GHz dual-core Kryo
+ro.device.gpu=Adreno 530
+ro.device.rear_cam=12.2 MP
+ro.device.front_cam=5.0 MP
+ro.device.screen_res=1440x2560
+
+ro.sf.lcd_density=480
+ro.sf.init.lcd_density=640
+
+debug.sf.hw=1
+debug.egl.hw=1
+debug.gralloc.enable_fb_ubwc=1
+dalvik.vm.heapsize=36m
+dev.pm.dyn_samplingrate=1
+persist.demo.hdmirotationlock=false
+
+qcom.hw.aac.encoder=true
+
+# system props for the MM modules
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+mmp.enable.3g2=true
+media.aac_51_output_enabled=true
+mm.enable.smoothstreaming=true
+# 3314291: Decimal sum after adding FLAC parser flag 131072
+# 37491 is decimal sum of supported codecs in AAL
+# codecs: DivX DivXHD AVI AC3 ASF AAC QCP DTS 3G2 MP2TS
+mm.enable.qcom_parser=3314291
+persist.mm.enable.prefetch=true
+
+# system props for the data modules
+persist.data.dpm.enable=true
+
+# system props for time-services
+persist.timed.enable=true
+
+# system prop for opengles version
+ro.opengles.version=196610
+
+# system property for maximum number of HFP client connections
+bt.max.hfpclient.connections=1
+
+# System property for cabl
+ro.qualcomm.cabl=1
+
+# Simulate sdcard on /data/media
+persist.fuse_sdcard=true
+
+# system prop for Bluetooth SOC type
+qcom.bluetooth.soc=rome
+
+# system prop for A4WP profile support
+ro.bluetooth.a4wp=true
+
+# system prop for wipower support
+ro.bluetooth.wipower=true
+
+# Set this true as ROME which is programmed
+# as embedded wipower mode by deafult
+ro.bluetooth.emb_wp_mode=true
+
+# snapdragon value add features
+ro.qc.sdk.audio.ssr=false
+
+# fluencetype can be "fluence" or "fluencepro" or "none"
+ro.qc.sdk.audio.fluencetype=none
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.speaker=true
+
+# system prop for RmNet Data
+persist.rmnet.data.enable=true
+persist.data.wda.enable=true
+persist.data.df.dl_mode=5
+persist.data.df.ul_mode=5
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.data.df.mux_count=8
+persist.data.df.iwlan_mux=9
+persist.data.df.dev_name=rmnet_usb0
+
+# property to enable user to access Google WFD settings
+persist.debug.wfd.enable=1
+# property to choose between virtual/external wfd display
+persist.sys.wfd.virtual=0
+
+# property to specify the number of frames to skip before setting hint
+sdm.perf_hint_window=50
+
+# tunnel encoding
+tunnel.audio.encode=true
+
+# gapless by default
+audio.offload.gapless.enabled=true
+
+# Buffer size in kbytes for compress offload playback
+audio.offload.buffer.size.kb=64
+
+# Enable offload audio video playback by default
+av.offload.enable=true
+
+# Enable 16 bit PCM offload by default
+audio.offload.pcm.16bit.enable=true
+
+# Enable 24 bit PCM offload by default
+audio.offload.pcm.24bit.enable=true
+
+# Enable audio track offload by default
+audio.offload.track.enabled=true
+
+# enable voice path for PCM VoIP by default
+use.voice.path.for.pcm.voip=true
+
+# system prop for NFC DT
+ro.nfc.port=I2C
+
+# enable voice path for PCM VoIP by default
+use.voice.path.for.pcm.voip=true
+
+# enable property for Dolby ds2
+audio.dolby.ds2.enabled=true
+
+# enable property for hard bypass
+audio.dolby.ds2.hardbypass=true
+
+audio.offload.passthrough=true
+audio.offload.multiple.enabled=true
+
+# enable navigation bar
+qemu.hw.mainkeys=1
+
+# property to enable VDS WFD solution
+persist.hwc.enable_vds=1
+
+# Enable stm events
+ro.dbg.coresight.config=stm_events_disabled
+
+# property to enable fingerprint
+persist.qfp=false
+
+# Docomo VoLTE Feature
+ro.com.nttdocomo.videocall=true
+
+# Set SSC Debug Level on AP Side
+persist.debug.sensors.hal=W
+debug.qualcomm.sns.daemon=I
+debug.qualcomm.sns.libsensor1=I
+
+# Disable Sensor Feature
+ro.qti.sensors.georv=false
+ro.qti.sensors.cmc=false
+ro.qti.sensors.dpc=false
+ro.qti.sensors.facing=false
+ro.qti.sensors.fast_amd=false
+ro.qti.sensors.scrn_ortn=false
+
+# Disable rotator split feature
+sdm.debug.disable_rotator_split=1
+
+# Radio
+rild.libargs=-d /dev/ttyS0
+ro.ril.telephony.mqanelements=6
+ro.telephony.ril.config=newDialCode

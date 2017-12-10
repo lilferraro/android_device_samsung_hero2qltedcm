@@ -1,0 +1,4 @@
+allow init vfat:file { read open };
+allow init sysfs_sec:lnk_file r_file_perms;
+allow init debugfs:file write;
+allow init adsprpcd_file:filesystem { relabelto relabelfrom mount };

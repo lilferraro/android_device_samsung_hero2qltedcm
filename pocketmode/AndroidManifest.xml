@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cyanogenmod.pocketmode"
+    android:versionCode="1"
+    android:versionName="1.1"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="cyanogenmod.permission.HARDWARE_ABSTRACTION_ACCESS" />
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21"/>
+
+    <application
+        android:label="SamsungPocketMode"
+        android:persistent="true"
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true">
+
+        <receiver android:name=".Startup" >
+            <intent-filter android:priority="99" >
+                <action android:name="cyanogenmod.intent.action.INITIALIZE_CM_HARDWARE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".PocketModeService"
+                 android:permission="PocketModeService">
+        </service>
+
+        <activity android:name="PocketMode"
+                  android:label="PocketMode"
+                  android:excludeFromRecents="true"
+                  android:launchMode="singleInstance"
+                  android:screenOrientation="portrait"
+                  android:windowAnimationStyle="@null">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

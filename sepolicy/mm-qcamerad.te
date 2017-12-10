@@ -1,0 +1,8 @@
+allow mm-qcamerad camera_prop:property_service set;
+allow mm-qcamerad permission_service:service_manager find;
+allow mm-qcamerad media_rw_data_file:dir search;
+allow mm-qcamerad sysfs_camera:dir search;
+allow mm-qcamerad sysfs_camera:file rw_file_perms;
+allow mm-qcamerad system_data_file:dir w_dir_perms;
+allow mm-qcamerad system_file:file execmod; # for libmmcamera_faceproc
+get_prop(mm-qcamerad, diag_prop);

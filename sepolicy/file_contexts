@@ -1,0 +1,50 @@
+# Bluetooth
+/dev/ttySAC4                                            u:object_r:bluetooth_device:s0
+/dev/rfkill                                             u:object_r:wpa_device:s0
+/efs/bluetooth(/.*)?                                    u:object_r:bluetooth_efs_file:s0
+
+# Camera
+/sys/class/camera(/.*)?                                 u:object_r:sysfs_camera:s0
+
+# CMHW
+/sys/class/timed_output/vibrator(/.*)?                  u:object_r:sysfs_vibeamp:s0
+
+# Display
+/sys/class/lcd/panel/power_reduce                       u:object_r:sysfs_display:s0
+
+# EFS
+/dev/block/bootdevice/by-name/efs                       u:object_r:modem_efs_partition_device:s0
+
+# Fingerprint
+/data/validity(/.*)?                                    u:object_r:vcsFPService_data_file:s0
+/dev/validity(/.*)?                                     u:object_r:validity_device:s0
+/dev/vfsspi                                             u:object_r:validity_device:s0
+
+# Macloader
+/system/bin/macloader                                   u:object_r:macloader_exec:s0
+
+# mcDriverDaemon
+/system/bin/mcDriverDaemon                              u:object_r:tee_exec:s0
+
+# NFC
+/dev/sec-nfc                                            u:object_r:nfc_device:s0
+/dev/pn547                                              u:object_r:nfc_device:s0
+
+# SEC
+/sys/class/sec/sec_touchkey(/.*)?                       u:object_r:sysfs_sec:s0
+/sys/class/sec/tsp(/.*)?                                u:object_r:sysfs_sec:s0
+
+# Sensors
+/dev/batch_io                                           u:object_r:sensors_device:s0
+/efs/FactoryApp/baro_delta                              u:object_r:sensors_efs_file:s0
+/efs/gyro_cal_data                                      u:object_r:sensors_efs_file:s0
+/efs/prox_cal                                           u:object_r:sensors_efs_file:s0
+/sys/class/sensors/proximity_sensor/state               u:object_r:sysfs_proximity:s0
+
+# WiFi
+/data/.cid.info                                         u:object_r:wifi_data_file:s0
+/data/.wifiver.info                                     u:object_r:wifi_data_file:s0
+/efs/wifi(/.*)?                                         u:object_r:wifi_efs_file:s0
+/sys/module/dhd/parameters/nvram_path                   u:object_r:sysfs_wifi_nv_path:s0
+
+/sys/kernel/debug/rmt_storage/rmts                      u:object_r:debugfs_rmts:s0
