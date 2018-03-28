@@ -12,6 +12,10 @@ type prov_efs_file, file_type;
 type persist_usf_cal_file, file_type;
 type persist_qc_senseid_file, file_type;
 
+# vendor types
+type idc_file, file_type, vendor_file_type;
+type keylayout_file, file_type, vendor_file_type;
+
 type sysfs_mdnie, fs_type, sysfs_type;
 type sysfs_sec_key, fs_type, sysfs_type;
 
