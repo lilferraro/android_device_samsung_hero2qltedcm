@@ -482,4 +482,7 @@
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
+    <!-- Does device supports fast charging ? -->
+    <bool name="config_FastChargingLedSupported">true</bool>
+
 </resources>
