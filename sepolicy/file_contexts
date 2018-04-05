@@ -32,8 +32,8 @@
 /sys/devices/virtual/sec/sec_key(/.*)?                      u:object_r:sysfs_sec_key:s0
 
 # Binaries
-/(vendor|system/vendor)/bin/mcDriverDaemon    u:object_r:tee_exec:s0
-/(vendor|system/vendor)/bin/perfd             u:object_r:perfd_exec:s0
+/vendor/bin/mcDriverDaemon   u:object_r:tee_exec:s0
+/vendor/bin/perfd            u:object_r:perfd_exec:s0
 
 # Misc files on /vendor
 /vendor/usr/idc(/.*)?        u:object_r:idc_file:s0
