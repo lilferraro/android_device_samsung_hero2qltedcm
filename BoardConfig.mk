@@ -62,6 +62,8 @@ TARGET_KERNEL_SOURCE := kernel/samsung/msm8996
 TARGET_KERNEL_CONFIG := lineageos_hero2qlte_jpn_dcm_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_COMPILE_WITH_MSM_KERNEL := true
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_MK := $(VENDOR_PATH)/mkbootimg.mk
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8996
