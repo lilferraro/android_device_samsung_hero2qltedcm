@@ -134,9 +134,6 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 WITH_LINEAGE_CHARGER := false
 
-# CNE and DPM
-BOARD_USES_QCNE := false
-
 # Disable secure discard because it's SLOW
 BOARD_SUPPRESS_SECURE_ERASE := true
 
