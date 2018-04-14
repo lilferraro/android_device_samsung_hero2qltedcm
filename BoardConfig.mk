@@ -236,7 +236,6 @@ TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
 TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Qualcomm supportbt_firmware
 BOARD_USES_QCOM_HARDWARE := true
