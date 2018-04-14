@@ -1,6 +1,7 @@
 allow system_server binder_per_mgr_service:service_manager find;
 
 allow system_server efs_file:dir search;
+allow system_server efs_file:file r_file_perms;
 
 allow system_server sysfs_mdnie:file rw_file_perms;
 
@@ -18,6 +19,8 @@ allow system_server qti_debugfs:file { getattr open read };
 
 allow system_server unlabeled:file unlink;
 allow system_server fuse_device:dir { open read getattr search };
+
+allow system_server install_data_file:file getattr;
 
 # /vendor/usr/keylayout
 r_dir_file(system_server, idc_file);

@@ -1,7 +1,14 @@
 allow hal_bluetooth_default wcnss_filter:unix_stream_socket connectto;
+allow hal_bluetooth_default wcnss_filter:process transition;
 
 # bt_fw_version.txt
 allow hal_bluetooth_default bluetooth_data_file:dir { r_dir_perms };
 allow hal_bluetooth_default bluetooth_data_file:file { rw_file_perms };
+
+allow hal_bluetooth_default bluetooth_device:chr_file rw_file_perms;
+allow hal_bluetooth_default wifi_data_file:file r_file_perms;
+
+# Bluetooth app depend on /vendor/lib64/libaptX_encoder.so
+allow hal_bluetooth_default vendor_file:file { r_file_perms execute };
 
 r_dir_file(hal_bluetooth_default, firmware_file);

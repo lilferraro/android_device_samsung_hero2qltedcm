@@ -1,12 +1,14 @@
 # Data types
 type validity_data_file, file_type, data_file_type;
-type thermal_data_file, file_type, data_file_type;
 type mobicore_data_file, file_type, data_file_type;
 
 # EFS types
 type app_efs_file, file_type;
 type wifi_efs_file, file_type;
 type prov_efs_file, file_type;
+
+# firmware
+type nfc_fw_file, file_type;
 
 # Persist types
 type persist_usf_cal_file, file_type;
@@ -16,6 +18,7 @@ type persist_qc_senseid_file, file_type;
 type idc_file, file_type, vendor_file_type;
 type keylayout_file, file_type, vendor_file_type;
 
+# sysfs
 type sysfs_mdnie, fs_type, sysfs_type;
 type sysfs_sec_key, fs_type, sysfs_type;
 
