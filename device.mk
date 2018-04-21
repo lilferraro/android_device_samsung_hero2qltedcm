@@ -246,6 +246,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     lights.msm8996
 
+# LiveDisplay native
+PRODUCT_BOOT_JARS += \
+    vendor.lineage.livedisplay-V1.0-java
+
 # Live Wallpapers
 PRODUCT_PACKAGES += \
     librs_jni
