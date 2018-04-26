@@ -978,7 +978,3 @@ vendor/lib64/libwfdhaldsmanager.so
 vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/libwfdmmservice.so
 vendor/lib64/libwfdmodulehdcpsession.so
-
-# HIDL - Dummy hidl base and manager blobs for older blobs.
-lib/android.hidl.base@1.0.so
-lib64/android.hidl.base@1.0.so
