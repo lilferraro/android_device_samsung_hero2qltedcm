@@ -129,6 +129,9 @@ ro.sys.fw.dex2oat_thread_count=4
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.sys.fw.bg_apps_limit=60
 
+# Priv-app permissions whitelist
+ro.control_privapp_permissions=enforce
+
 # Qualcomm
 drm.service.enabled=true
 qcom.hw.aac.encoder=true
