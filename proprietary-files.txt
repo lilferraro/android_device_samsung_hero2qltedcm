@@ -863,7 +863,6 @@ vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # SmartcardService
--app/SmartcardService/SmartcardService.apk
 etc/permissions/org.simalliance.openmobileapi.xml
 -framework/org.simalliance.openmobileapi.jar
 
