@@ -280,7 +280,7 @@ TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/etc/fstab.qcom
 endif
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/qcom/common
+TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)/releasetools
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
