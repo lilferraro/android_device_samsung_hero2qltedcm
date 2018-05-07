@@ -805,6 +805,7 @@ vendor/lib64/libqmiservices.so
 vendor/lib64/libsmemlog.so
 
 # Radio
+vendor/bin/ATFWD-daemon
 vendor/bin/ipacm-diag
 vendor/bin/netmgrd
 vendor/bin/qmuxd
