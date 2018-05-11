@@ -49,6 +49,9 @@ vendor/etc/Speaker_cal.acdb
 # Audio libraries
 etc/permissions/audiosphere.xml
 framework/audiosphere.jar
+lib/hw/audio.playback_record.default.so
+lib/hw/audio.tms.default.so
+lib64/hw/audio.tms.default.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbmapper.so
