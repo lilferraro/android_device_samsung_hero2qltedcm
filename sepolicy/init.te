@@ -1,0 +1,8 @@
+allow init { domain -lmkd -crash_dump }:process noatsecure;
+
+allow init adsprpcd_file:filesystem { mount relabelfrom relabelto };
+allow init debugfs:file write;
+allow init debugfs:dir mounton;
+
+# superuser
+allow init su:process { transition rlimitinh siginh noatsecure };

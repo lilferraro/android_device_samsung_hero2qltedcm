@@ -1,0 +1,36 @@
+# Devices
+/dev/ttyHS0                  u:object_r:bluetooth_device:s0
+/dev/lirc[0-9]*              u:object_r:lirc_device:s0
+/dev/pn548                   u:object_r:nfc_device:s0
+/dev/validity                u:object_r:validity_device:s0
+/dev/vfsspi                  u:object_r:vfsspi_device:s0
+/dev/mobicore                u:object_r:tee_device:s0
+/dev/mobicore-user           u:object_r:tee_device:s0
+
+# Data files
+/data/validity(/.*)?         u:object_r:validity_data_file:s0
+/data/decrypt\.txt           u:object_r:thermal_data_file:s0
+/data/misc/mcRegistry(/.*)?  u:object_r:mobicore_data_file:s0
+
+# EFS files
+/efs/FactoryApp(/.*)?        u:object_r:app_efs_file:s0
+/efs/wifi(/.*)?              u:object_r:wifi_efs_file:s0
+/efs/prov(/.*)?              u:object_r:prov_efs_file:s0
+/efs/prov_data(/.*)?         u:object_r:prov_efs_file:s0
+
+# Persist files
+/persist/audio/us_cal        u:object_r:persist_usf_cal_file:s0
+/persist/qc_senseid(/.*)?    u:object_r:persist_qc_senseid_file:s0
+
+/dev/block/platform/soc/624000.ufshc/by-name/efs            u:object_r:efs_block_device:s0
+/dev/block/platform/soc/624000.ufshc/by-name/persistent     u:object_r:frp_block_device:s0
+/dev/block/platform/soc/624000.ufshc/by-name/fota           u:object_r:misc_block_device:s0
+
+# sysfs
+/sys/devices/virtual/mdnie/mdnie/mode                       u:object_r:sysfs_mdnie:s0
+/sys/devices/virtual/mdnie/mdnie/scenario                   u:object_r:sysfs_mdnie:s0
+/sys/devices/virtual/sec/sec_key(/.*)?                      u:object_r:sysfs_sec_key:s0
+
+# Binaries
+/(vendor|system/vendor)/bin/mcDriverDaemon    u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/perfd             u:object_r:perfd_exec:s0
