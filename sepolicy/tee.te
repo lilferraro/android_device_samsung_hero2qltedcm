@@ -20,5 +20,5 @@ allow tee mobicore_data_file:dir { write search add_name create };
 allow tee persist_qc_senseid_file:dir create_dir_perms;
 allow tee persist_qc_senseid_file:file create_file_perms;
 
-allow tee validity_data_file:dir create_dir_perms;
-allow tee validity_data_file:file create_file_perms;
+allow tee vfsspi_data_file:dir create_dir_perms;
+allow tee vfsspi_data_file:file create_file_perms;

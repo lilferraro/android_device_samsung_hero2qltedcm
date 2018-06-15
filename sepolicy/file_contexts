@@ -10,7 +10,7 @@
 /dev/rfkill                  u:object_r:wlan_device:s0
 
 # Data files
-/data/validity(/.*)?         u:object_r:validity_data_file:s0
+/data/validity(/.*)?         u:object_r:vfsspi_data_file:s0
 /data/misc/mcRegistry(/.*)?  u:object_r:mobicore_data_file:s0
 
 # EFS files
