@@ -210,6 +210,9 @@ ro.config.timaversion=0
 ro.securestorage.support=false
 wlan.wfd.hdcp=disable
 
+# Security patch level
+ro.lineage.build.vendor_security_patch=2018-01-01
+
 # Sensor Feature
 ro.qti.sensors.cmc=false
 ro.qti.sensors.dpc=false
