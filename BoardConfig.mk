@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -57,7 +57,6 @@ BOARD_KERNEL_TAGS_OFFSET := 0x02000000
 BOARD_RAMDISK_OFFSET     := 0x02200000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8996
 TARGET_KERNEL_CONFIG := lineageos_hero2qlte_jpn_dcm_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
@@ -116,7 +115,6 @@ TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8996
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
 BOARD_HAS_QCA_BT_ROME := true
-BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 QCOM_BT_USE_BTNV := true
 QCOM_BT_USE_SMD_TTY := true
@@ -197,12 +195,6 @@ USE_DEVICE_SPECIFIC_GPS := true
 # HIDL
 DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(VENDOR_PATH)/compatibility_matrix.xml
-
-# Init
-TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-
-# Keystore
-TARGET_PROVIDES_KEYMASTER := true
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -286,7 +278,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)/releasetools
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 TARGET_RIL_VARIANT := caf
-PROTOBUF_SUPPORTED := true
 
 # SECComp filters
 BOARD_SECCOMP_POLICY += $(VENDOR_PATH)/seccomp
